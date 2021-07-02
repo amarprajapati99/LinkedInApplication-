@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="F:/Selenium/LinkedIn/src/test/java/com/bridgelabz/datadriven/test/LoginTest.java">
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="com.bridgelabz.datadriven.test.LoginTest">
+                <methods>
+                    <include name="loginTo_Application_with_valid_credentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
