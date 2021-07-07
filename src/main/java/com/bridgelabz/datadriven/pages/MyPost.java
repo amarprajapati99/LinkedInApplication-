@@ -12,6 +12,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
 public class MyPost extends BaseClass{
+
     /* Used FindBy Annotations for getting elements using locators
      * Initialize web elements */
 

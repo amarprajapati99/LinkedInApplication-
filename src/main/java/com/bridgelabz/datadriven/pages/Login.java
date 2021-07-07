@@ -9,7 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 public class Login extends BaseClass{
 
     /* @Description - Using FindBy for locating elements */
-
     @FindBy (xpath = "//input[@id='username']")
     WebElement userId;
 
@@ -19,31 +18,26 @@ public class Login extends BaseClass{
     @FindBy (xpath = "//button[normalize-space()='Sign in']")
     WebElement loginButton;
 
-    /* @Description - Called parameterized constructor */
+//    @FindBy(xpath = "//img[@id='ember34']")
+//    WebElement clickOnMe;
+//
+//    @FindBy(xpath = "//a[normalize-space()='Sign Out']")
+//    WebElement signOut;
+//
+//    @FindBy(xpath = "//a[normalize-space()='Sign in']")
+//    WebElement signIn;
 
+    /* @Description - Called parameterized constructor */
     public Login (WebDriver driver) {
         PageFactory.initElements (driver, this);
     }
 
-    public void setEmail(String inputEmail) {
-        userId.sendKeys(inputEmail);
-    }
-
-    public void setPassword(String inputPassword) {
-        userPassword.sendKeys(inputPassword);
-    }
-
-    public void clickLogin() {
-        loginButton.click();
-    }
-
-    public void login(String userId, String userPassword) throws InterruptedException {
-
-        setEmail(userId);
-        setPassword(userPassword);
-
-        clickLogin();
-        Thread.sleep(2000);
-
+    public void login(String userEmail, String userPass) {
+        userId.sendKeys (userEmail);
+        userPassword.sendKeys (userPass);
+        loginButton.click ();
+//        clickOnMe.click ();
+//        signOut.click ();
+//        signIn.click ();
     }
 }

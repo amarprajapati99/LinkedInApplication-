@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BaseClass{
 
+
     /* @Description - Used FindBy Annotations for getting elements using locators */
 
     @FindBy (xpath = "//input[@placeholder='Search']")

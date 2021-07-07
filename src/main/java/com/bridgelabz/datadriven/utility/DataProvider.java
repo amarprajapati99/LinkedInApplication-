@@ -6,8 +6,7 @@ public class DataProvider {
 
     @org.testng.annotations.DataProvider(name = "LoginDetails")
     public static Object[][] getDataFromProvider() throws  IOException {
-        ExcelUtil readExcel = new ExcelUtil();
-
-        return readExcel.readData("F:\\ExcelData\\TestData.xlsx", "LoginData");
+        ExcelData readExcel = new ExcelData ();
+        return readExcel.readData("F:\\ExcelData\\LoginData.xlsx", "LoginData");
     }
 }

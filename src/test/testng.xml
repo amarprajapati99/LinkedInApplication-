@@ -5,9 +5,15 @@
           name="F:/Selenium/LinkedIn/src/test/java/com/bridgelabz/datadriven/test/LoginTest.java">
         <parameter name="browserName" value="chrome"/>
         <classes>
-            <class name="com.bridgelabz.datadriven.test.LoginTest">
+            <class name="com.bridgelabz.datadriven.test.HomePageTest">
+
+<!--            <class name="com.bridgelabz.datadriven.test.LoginTest">-->
+
+                <parameter name="email" value="abc@gmail.com"/>
+                <parameter name="password" value="JayHindJayBharat"/>
                 <methods>
                     <include name="loginTo_Application_with_valid_credentials"/>
+                    <include name="TestHome_isWorkingOrNot"/>
                 </methods>
             </class>
         </classes>
